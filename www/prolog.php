@@ -33,5 +33,5 @@ function setName($name = '')
 
 function isLoggedIn(): bool
 {
-    return !!getName();
+    return isset($_SESSION['name']) && !empty($_SESSION['name']);
 }

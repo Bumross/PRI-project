@@ -1,93 +1,58 @@
 <?php
-// přihlášení uživatele
+ob_start(); // Start output buffering
+
 require '../prolog.php';
 require INC . '/db.php';
 require INC . '/html-begin.php';
+require INC . '/boxes.php'; // Include the boxes.php file where successBox and errorBox functions are defined
 
-// Proměnná pro uložení zprávy o chybě
 $error_message = "";
 
 switch (@$_POST['akce']) {
     case 'login':
-        $jmeno = @$_POST['name'];
-        $heslo = @$_POST['password'];
+        $name = @$_POST['name'];
+        $password = @$_POST['password'];
         if (authUser($name, $password)) {
-            setName($password);
+            setName($name);
+            successBox("Successfully logged in."); // Display success message
+            header("Location: /"); // Redirect to home page
+            exit(); // Stop further execution
         } else {
-            alert("Wrong name or password. Please try again.");
+            $error_message = "Wrong name or password. Please try again.";
         }
         break;
 
     case 'logout':
-        setName();
+        setName(); // Not sure what setName() does exactly, but assuming it logs the user out
         break;
 }
 
-// nav až po nastavení jména, aby se zobrazilo
 require INC . '/nav.php';
 
-$inputClass = "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline";
+ob_end_flush(); // Flush output buffers
+
 ?>
 
-<script>
-    function onSubmit(e) {
-        // no default submit
-        e.preventDefault()
+<link rel="stylesheet" type="text/css" href="../../../styles/styles.css">
 
-        <?php if (!isLoggedIn()) { ?>
-            // inputs
-            let { name, password } = this.elements
-
-            // trim and check
-            if ((jmeno.value = jmeno.value.trim()).length < 3) {
-                alert('Name is too short')
-                return
-            }
-
-            // trim and check
-            if ('heslo' == (heslo.value = heslo.value.trim())) {
-                alert('Heslo nesmí být "heslo"')
-                return
-            }
-        <?php } ?>
-
-        // continue to submit
-        this.submit()
-    }
-</script>
-
-<div class="flex justify-center m-12">
-    <form name="loginForm" class="bg-zinc-50 rounded px-8 pt-6 pb-8 mb-4" method="POST">
-        <input type="hidden" name="akce" value="<?= isUser() ? 'logout' : 'login' ?>">
-        <?php if (!isUser()) { ?>
-            <div class="mb-4">
-                Přihlášení
-            </div>
-            <div class="mb-4">
-                <input class="<?= $inputClass ?>" name="jmeno" type="text" placeholder="jméno" required>
-            </div>
-            <div class="mb-4">
-                <input class="<?= $inputClass ?>" name="heslo" type="password" placeholder="heslo" required>
-            </div>
-            <input class="bg-blue-500 text-white font-bold rounded py-2 px-4" type="submit"
-                value="<?= isUser() ? 'Odhlásit' : 'Přihlásit' ?>" />
-        <?php } else { ?>
-            <div class="mb-4">
-                <a href="logout.php" class="bg-blue-500 text-white font-bold rounded py-2 px-4">Odhlásit</a>
-            </div>
-        <?php } ?>
+<div class="login-container">
+    <form name="loginForm" method="POST" onsubmit="onSubmit(event)" class="login-form">
+        <input type="hidden" name="akce" value="<?= isLoggedIn() ? 'logout' : 'login' ?>">
+        <div class="input-field">
+            <input name="name" type="text" placeholder="Username" required>
+        </div>
+        <div class="input-field">
+            <input name="password" type="password" placeholder="Password" required>
+        </div>
+        <input type="submit" value="<?= isLoggedIn() ? 'LogOut' : 'Login!' ?>" class="submit-btn">
     </form>
+    <a href="register.php" class="register-link">Don't have an account? Register here!</a>
 </div>
 
-<?php if (!isUser()) { ?>
-<div class="flex justify-center m-12">
-    <a href="register.php" class="text-blue-500 font-bold">Nemáš účet? Zaregistruj se.</a>
-</div>
-<?php } ?>
-
-
-<script>
-    document.loginForm.addEventListener('submit', onSubmit)
-</script>
-
+<?php
+if ($error_message) {
+    errorBox($error_message); // Display error message
+}
+?>
+</body>
 <?php require INC . '/html-end.php'; ?>

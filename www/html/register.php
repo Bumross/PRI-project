@@ -1,44 +1,56 @@
 <?php
-// přihlášení uživatele
+ob_start(); // Start output buffering
+
 require '../prolog.php';
 require INC . '/db.php';
 require INC . '/html-begin.php';
+require INC . '/nav.php'; // Include navigation
+require INC . '/boxes.php'; // Include the boxes.php file where successBox and errorBox functions are defined
 
-// Pokud byla odeslána registrace
+$error_message = "";
+
+// If the registration form is submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['akce']) && $_POST['akce'] === 'register') {
-    $jmeno = $_POST['jmeno'];
-    $heslo = $_POST['heslo'];
-    $heslo_znovu = $_POST['heslo_znovu'];
+    $name = $_POST['name'];
+    $password = $_POST['password'];
+    $password_again = $_POST['password_again'];
 
-    // Kontrola, zda hesla jsou stejná
-    if ($heslo !== $heslo_znovu) {
-        echo '<script>alert("Hesla se neshodují.");</script>';
+    // Check if passwords match
+    if ($password !== $password_again) {
+        $error_message = "Passwords do not match.";
     } else {
-        // Registrovat uživatele
-        registerUser($jmeno, $heslo);
-        echo '<script>alert("Registrace proběhla úspěšně."); window.location.href = "login.php";</script>';
-        exit; // Zastavení provádění skriptu po přesměrování
+        // Register the user
+        registerUser($name, $password);
+        echo '<script>alert("Registration successful."); window.location.href = "login.php";</script>';
+        exit; // Stop script execution after redirection
     }
 }
 
-// HTML formulář pro registraci
+ob_end_flush(); // Flush output buffers
 ?>
-<div class="flex justify-center m-12">
-    <form name="registerForm" class="bg-zinc-50 rounded px-8 pt-6 pb-8 mb-4" method="POST">
+
+<link rel="stylesheet" type="text/css" href="../styles/styles.css">
+
+<div class="login-container">
+    <form name="registerForm" method="POST" class="login-form">
         <input type="hidden" name="akce" value="register">
-        <div class="mb-4">
-            Registrace
+        <div class="input-field">
+            <input name="name" type="text" placeholder="Username" required>
         </div>
-        <div class="mb-4">
-            <input class="<?= $inputClass ?>" name="jmeno" type="text" placeholder="Jméno" required>
+        <div class="input-field">
+            <input name="password" type="password" placeholder="Password" required>
         </div>
-        <div class="mb-4">
-            <input class="<?= $inputClass ?>" name="heslo" type="password" placeholder="Heslo" required>
+        <div class="input-field">
+            <input name="password_again" type="password" placeholder="Confirm Password" required>
         </div>
-        <div class="mb-4">
-            <input class="<?= $inputClass ?>" name="heslo_znovu" type="password" placeholder="Heslo znovu" required>
-        </div>
-        <input class="bg-blue-500 text-white font-bold rounded py-2 px-4" type="submit" value="Registrovat" />
+        <input type="submit" value="Register!" class="submit-btn">
     </form>
 </div>
+
+<?php
+if ($error_message) {
+    errorBox($error_message); // Display error message
+}
+?>
+</body>
 <?php require INC . '/html-end.php'; ?>

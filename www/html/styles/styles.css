@@ -1,0 +1,114 @@
+/* Add the provided CSS styles here */
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+
+.text-box {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #1f2937;
+    color: #ffffff;
+    text-align: center;
+}
+
+.text-box h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-box {
+    border: 2px solid #000;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33.333% - 20px);
+    text-align: center;
+    transition: transform 0.3s, font-size 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+    background-color: #1f2937;
+    border: none;
+}
+
+.content-box:hover {
+    transform: scale(1.05);
+    font-size: 1.1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    background-color: #374151;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Adjust to stack elements vertically */
+}
+
+.login-form {
+    background-color: #1f2937; /* Apply the darker background color */
+    border-radius: 8px;
+    padding: 16px;
+    width: 300px; /* Set the width of the form */
+    text-align: center; /* Center form elements */
+}
+
+.input-field {
+    margin-bottom: 12px;
+}
+
+.input-field input {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #374151; /* Darker background color for input fields */
+    color: #ffffff; /* Lighter text color for input fields */
+    border: none;
+    border-radius: 4px;
+}
+
+.input-field input:focus {
+    outline: none;
+}
+
+.submit-btn,
+.register-link {
+    background-color: #1f2937;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-top: 10px; /* Adjust as needed */
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s, font-size 0.3s, box-shadow 0.3s, background-color 0.3s;
+    display: inline-block;
+}
+
+.submit-btn:hover,
+.register-link:hover {
+    background-color: #374151;
+    transform: scale(1.05);
+    font-size: 1.1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

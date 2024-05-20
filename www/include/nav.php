@@ -26,7 +26,7 @@ require INC . '/pages.php';
             <ul class="font-medium flex flex-col md:p-0 mt-4 md:flex-row md:mt-0 w-full">
                 <?php foreach ($pages as $href => $title) { ?>
                     <li class="w-full md:w-auto">
-                        <a href="<?= $href ?>" class="block px-3 py-2 rounded hover:bg-gray-700">
+                        <a href="<?= $href ?>" class="block px-3 py-2 rounded hover:bg-gray-700 text-lg font-bold">
                             <?= $title ?>
                         </a>
                     </li>

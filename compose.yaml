@@ -16,9 +16,10 @@ services:
       dockerfile: Dockerfiles/Database
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: database
+      MYSQL_DATABASE: mydb
       MYSQL_USER: admin
       MYSQL_PASSWORD: heslo
+      MYSQL_GRANT_PRIVILEGES: "GRANT ALL PRIVILEGES ON mydb.* TO 'admin'@'localhost'; FLUSH PRIVILEGES;"
     ports:
       - 9906:3306
 

@@ -2,7 +2,7 @@
 // Database functions
 
 // global connect to db
-$_db_ = mysqli_connect("database", "admin", "heslo") or die;
+$_db_ = mysqli_connect("database", "admin", "heslo", "mydb") or die;
 
 // database query
 function dbQuery(string $query): bool|mysqli_result
@@ -23,21 +23,16 @@ function dbEscape(string $s): string
 
 function authUser(string $name, string $password): bool
 {
-    global $_db_;
-
     $name = dbEscape($name);
+    $password = dbEscape($password);
 
-    $query = $_db_->prepare("SELECT password FROM users WHERE name = ?");
-    $query->bind_param("s", $name);
-    $query->execute();
-    $result = $query->get_result();
-
-    if ($result->num_rows == 1) {
-        $row = $result->fetch_assoc();
-        $password = $row['password'];
-
-        if (password_verify($password)) {
-            return true;
+    if ($result = dbQuery("select id from users where name=$name and password=$password")) {
+        if ($result->num_rows) {
+            // fetch_all() vrací pole polí (řádky, a každá má políčka)
+            // [[$id]] je dekonstrukce: vezme první hodnotu z první řádky
+            [[$id]] = $result->fetch_all();
+            if ($id)
+                return true;
         }
     }
 
@@ -49,19 +44,25 @@ function authUser(string $name, string $password): bool
 function registerUser($name, $password) {
     global $_db_;
 
+    // Escape input values to prevent SQL injection
+    $escapedName = dbEscape($name);
+    $escapedPassword = dbEscape($password);
+
+    // Check if the user already exists
     $query = $_db_->prepare("SELECT id FROM users WHERE name = ?");
-    $query->bind_param("s", $name);
+    $query->bind_param("s", $escapedName);
     $query->execute();
     $result = $query->get_result();
 
     if ($result->num_rows > 0) {
-        die("User with this name already exist. Consider different name.");
+        die("User with this name already exists. Consider a different name.");
     }
 
-    $query = $_db_->prepare("INSERT INTO users (name, password) VALUES (?, ?)");
-    $query->bind_param("ss", $name, $password);
-    $query->execute();
+    // Insert the user into the database
+    $insertQuery = "INSERT INTO users (name, password) VALUES ($escapedName, $escapedPassword)";
+    dbQuery($insertQuery);
 }
+
 
 
 

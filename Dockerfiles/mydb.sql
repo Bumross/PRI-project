@@ -21,7 +21,7 @@ INSERT INTO `users` (`id`, `name`, `password`) VALUES
 
 
 -- table for pages
-DROP TABLE IF EXISTS ``;
+DROP TABLE IF EXISTS `posts`;
 CREATE TABLE `posts` (
   `name` varchar(100) NOT NULL,
   `views` int unsigned NOT NULL,

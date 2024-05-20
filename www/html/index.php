@@ -4,57 +4,7 @@ require INC . '/html-begin.php';
 require INC . '/nav.php';
 ?>
 
-<style>
-  h1 {
-    font-size: 3em;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  h2 {
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 5px;
-  }
-  h3 {
-    font-size: 1em;
-    text-align: center;
-    margin-bottom: 2px;
-  }
-  .text-box {
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #1f2937; /* Darker background color */
-    color: #ffffff; /* Lighter text color */
-  }
-  .content-box {
-    border: 2px solid #000; /* Keep the border for normal boxes */
-    padding: 20px;
-    margin: 10px;
-    width: calc(33.333% - 20px);
-    text-align: center;
-    transition: transform 0.3s, font-size 0.3s, box-shadow 0.3s; /* Removed transition for background-color */
-    box-sizing: border-box;
-    background-color: #1f2937;
-    border: none;
-  }
-  .content-box:hover {
-    transform: scale(1.05);
-    font-size: 1.1em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: none; /* Remove border on hover */
-     /* Darker background color on hover */
-    background-color: #374151;
-  }
-  .grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-  }
-</style>
+<link rel="stylesheet" type="text/css" href="../styles/styles.css">
 
 <main class='pb-10 m-6'>
   <h1 class="pb-6 text-5xl text-center">
