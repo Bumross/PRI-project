@@ -26,6 +26,13 @@ h3 {
     text-align: center;
 }
 
+.type-filter {
+    margin-bottom: 20px;
+}
+
+.type-filter label {
+    margin-right: 10px;
+}
 .text-box h3 {
     font-size: 1.2em;
     margin-bottom: 10px;

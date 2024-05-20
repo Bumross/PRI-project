@@ -1,0 +1,46 @@
+<AlcoholExperiences>
+  <AlcoholExperience>
+    <Type>Gin</Type>
+    <Brand>Tanqueray</Brand>
+    <History>Tanqueray is a renowned brand of gin with roots tracing back to 1830 when Charles Tanqueray established his distillery in London, England. It has since become one of the most iconic and respected gin brands globally, known for its impeccable quality and distinct flavor profile.</History>
+    <Details>
+      <Color>Clear</Color>
+      <Taste>
+        <Category>Refreshing and Botanical</Category>
+        <Description>Refreshing with prominent botanical notes, including juniper, coriander, and citrus.</Description>
+      </Taste>
+      <Garnish>Twist of lime or lemon</Garnish>
+      <ServingSuggestions>Best enjoyed in classic cocktails like Gin and Tonic, Martini, and Negroni.</ServingSuggestions>
+      <MixingSuggestions>Perfect for mixing with tonic water or vermouth, or in cocktails like Tom Collins or Gimlet.</MixingSuggestions>
+    </Details>
+    <PurchaseLocations>
+      <Location>
+        <Name>Gin Emporium</Name>
+        <Address>789 Juniper Ave, London, England</Address>
+        <URL>http://ginemporium.co.uk</URL>
+      </Location>
+      <Location>
+        <Name>Craft Spirits Boutique</Name>
+        <Address>456 Botanical St, Ginville, England</Address>
+        <URL>http://craftspiritsboutique.co.uk</URL>
+      </Location>
+      <Location>
+        <Name>Online Retailer</Name>
+        <Address>Website: www.examplegin.com</Address>
+        <URL>http://www.examplegin.com/tanqueray</URL>
+      </Location>
+    </PurchaseLocations>
+    <TastingLocations>
+      <Location>
+        <Name>Gin Distillery Tour</Name>
+        <Address>Tanqueray Distillery, London, England</Address>
+        <URL>http://tanqueraytours.co.uk</URL>
+      </Location>
+      <Location>
+        <Name>Cocktail Bar</Name>
+        <Address>123 Botanical Blvd, Ginville, England</Address>
+        <URL>http://cocktailbar.co.uk</URL>
+      </Location>
+    </TastingLocations>
+  </AlcoholExperience>
+</AlcoholExperiences>

@@ -1,0 +1,46 @@
+<AlcoholExperiences>
+  <AlcoholExperience>
+    <Type>Gin</Type>
+    <Brand>Hendrick's</Brand>
+    <History>Hendrick's Gin is a unique and unconventional gin crafted by William Grant & Sons in Girvan, Scotland. Introduced in 1999, it quickly gained popularity for its distinctive taste and elegant presentation, featuring cucumber and rose petal infusions. Hendrick's Gin is celebrated for its eccentricity and has become a favorite among gin enthusiasts seeking a more refined and imaginative drinking experience.</History>
+    <Details>
+      <Color>Clear</Color>
+      <Taste>
+        <Category>Floral and Aromatic</Category>
+        <Description>Delicate and floral with notes of rose, cucumber, and a hint of citrus, balanced by traditional botanicals like juniper and coriander.</Description>
+      </Taste>
+      <Garnish>Cucumber slice and/or rose petal</Garnish>
+      <ServingSuggestions>Best enjoyed in classic cocktails like Gin and Tonic, Martini, or Tom Collins.</ServingSuggestions>
+      <MixingSuggestions>Perfect for mixing with tonic water or in cocktails like Elderflower Collins or Cucumber Cooler.</MixingSuggestions>
+    </Details>
+    <PurchaseLocations>
+      <Location>
+        <Name>Gin Emporium</Name>
+        <Address>789 Botanical Blvd, Girvan, Scotland</Address>
+        <URL>http://ginemporium.co.uk</URL>
+      </Location>
+      <Location>
+        <Name>Gin Palace</Name>
+        <Address>456 Juniper Ave, London, England</Address>
+        <URL>http://ginpalace.co.uk</URL>
+      </Location>
+      <Location>
+        <Name>Online Retailer</Name>
+        <Address>Website: www.examplegin.com</Address>
+        <URL>http://www.examplegin.com/hendricks</URL>
+      </Location>
+    </PurchaseLocations>
+    <TastingLocations>
+      <Location>
+        <Name>Gin Distillery Tour</Name>
+        <Address>Hendrick's Gin Distillery, Girvan, Scotland</Address>
+        <URL>http://hendricksdistillerytours.co.uk</URL>
+      </Location>
+      <Location>
+        <Name>Cocktail Lounge</Name>
+        <Address>123 Floral St, London, England</Address>
+        <URL>http://cocktaillounge.co.uk</URL>
+      </Location>
+    </TastingLocations>
+  </AlcoholExperience>
+</AlcoholExperiences>

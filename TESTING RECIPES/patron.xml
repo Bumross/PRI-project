@@ -1,0 +1,46 @@
+<AlcoholExperiences>
+  <AlcoholExperience>
+    <Type>Tequila</Type>
+    <Brand>Patrón</Brand>
+    <History>Patrón is a brand of tequila produced in Mexico. It was founded in 1989 by John Paul DeJoria and Martin Crowley. Patrón is renowned for its high-quality, handcrafted tequilas made from 100% Weber Blue Agave, offering a smooth and distinct taste.</History>
+    <Details>
+      <Color>Clear</Color>
+      <Taste>
+        <Category>Smooth and Complex</Category>
+        <Description>Smooth with hints of citrus, agave, and vanilla, with a complex flavor profile.</Description>
+      </Taste>
+      <Garnish>Lime wedge and salt rim</Garnish>
+      <ServingSuggestions>Best enjoyed in classic cocktails like Margarita, Tequila Sunrise, or Paloma, or sipped neat or on the rocks.</ServingSuggestions>
+      <MixingSuggestions>Perfect for mixing in cocktails such as Margarita or Tequila Sunrise, or as a base in cocktails like Paloma or Tequila Mojito.</MixingSuggestions>
+    </Details>
+    <PurchaseLocations>
+      <Location>
+        <Name>Liquor Emporium</Name>
+        <Address>789 Agave Ave, Tequilatown, Mexico</Address>
+        <URL>http://liquoremporium.mx</URL>
+      </Location>
+      <Location>
+        <Name>Mexico Duty-Free</Name>
+        <Address>Benito Juárez International Airport, Mexico City, Mexico</Address>
+        <URL>http://mexicodutyfree.com</URL>
+      </Location>
+      <Location>
+        <Name>Online Retailer</Name>
+        <Address>Website: www.exampletequila.com</Address>
+        <URL>http://www.exampletequila.com/patron</URL>
+      </Location>
+    </PurchaseLocations>
+    <TastingLocations>
+      <Location>
+        <Name>Tequila Distillery Tour</Name>
+        <Address>Patrón Hacienda, Jalisco, Mexico</Address>
+        <URL>http://patrontours.mx</URL>
+      </Location>
+      <Location>
+        <Name>Agave Bar</Name>
+        <Address>456 Agave Rd, Tequilatown, Mexico</Address>
+        <URL>http://agavebar.mx</URL>
+      </Location>
+    </TastingLocations>
+  </AlcoholExperience>
+</AlcoholExperiences>

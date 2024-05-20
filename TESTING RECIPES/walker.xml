@@ -1,0 +1,46 @@
+<AlcoholExperiences>
+  <AlcoholExperience>
+    <Type>Scotch Whisky</Type>
+    <Brand>Johnnie Walker</Brand>
+    <History>Johnnie Walker is a distinguished brand of Scotch whisky established in 1820 by John Walker in Kilmarnock, Scotland. It has grown to become one of the most recognizable and widely distributed whisky brands globally, renowned for its exceptional quality and diverse range of blends.</History>
+    <Details>
+      <Color>Golden Amber</Color>
+      <Taste>
+        <Category>Complex and Smoky</Category>
+        <Description>Complex with a balance of smoky, peaty, and fruity flavors, along with hints of vanilla and spice.</Description>
+      </Taste>
+      <Garnish>Orange twist or lemon peel</Garnish>
+      <ServingSuggestions>Best enjoyed neat, on the rocks, or in cocktails like Highball or Whisky Sour.</ServingSuggestions>
+      <MixingSuggestions>Perfect for mixing with soda water or ginger ale, or in cocktails like Rob Roy or Rusty Nail.</MixingSuggestions>
+    </Details>
+    <PurchaseLocations>
+      <Location>
+        <Name>Whisky World</Name>
+        <Address>789 Whisky Ave, Kilmarnock, Scotland</Address>
+        <URL>http://whiskyworld.co.uk</URL>
+      </Location>
+      <Location>
+        <Name>Scotch Spirits Emporium</Name>
+        <Address>456 Peat Rd, Highlands, Scotland</Address>
+        <URL>http://scotchspirits.co.uk</URL>
+      </Location>
+      <Location>
+        <Name>Online Retailer</Name>
+        <Address>Website: www.examplewhisky.com</Address>
+        <URL>http://www.examplewhisky.com/johnnie-walker</URL>
+      </Location>
+    </PurchaseLocations>
+    <TastingLocations>
+      <Location>
+        <Name>Whisky Distillery Tour</Name>
+        <Address>Johnnie Walker Distillery, Kilmarnock, Scotland</Address>
+        <URL>http://johnniewalkertours.co.uk</URL>
+      </Location>
+      <Location>
+        <Name>Scotch Whisky Bar</Name>
+        <Address>123 Scotch St, Highlands, Scotland</Address>
+        <URL>http://scotchwhiskybar.co.uk</URL>
+      </Location>
+    </TastingLocations>
+  </AlcoholExperience>
+</AlcoholExperiences>

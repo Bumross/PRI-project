@@ -10,6 +10,25 @@ function xmlFileList($dir)
     return $list;
 }
 
+// unikatni typy
+function getUniqueTypes($dir) {
+    $types = array();
+    foreach (xmlFileList($dir) as $basename) {
+        $filePath = $dir . "/$basename.xml";
+        if (file_exists($filePath) && is_readable($filePath)) {
+            $xml = simplexml_load_file($filePath);
+            if ($xml) {
+                $type = (string) $xml->AlcoholExperience->Type;
+                if (!in_array($type, $types)) {
+                    $types[] = $type;
+                }
+            }
+        }
+    }
+    return $types;
+}
+
+
 // výpis chyb
 function xmlPrintErrors()
 { ?>
