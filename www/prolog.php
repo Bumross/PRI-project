@@ -4,7 +4,7 @@
 // adressates
 define('INC', __DIR__ . '/include');        // include files
 define('XML', __DIR__ . '/xml');            // XML files
-define('POSTS', '/var/database/posts');    // uploaded data
+define('POSTS', '/var/mydb/posts');    // uploaded data
 
 // configuration
 define('TITLE', 'TOP-SHELF');

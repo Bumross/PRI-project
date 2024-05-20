@@ -1,0 +1,19 @@
+<!ELEMENT AlcoholExperiences (AlcoholExperience+)>
+<!ELEMENT AlcoholExperience (Type, Brand, History?, Details, PurchaseLocations, TastingLocations)>
+<!ELEMENT Type (#PCDATA)>
+<!ELEMENT Brand (#PCDATA)>
+<!ELEMENT History (#PCDATA)>
+<!ELEMENT Details (Color, Taste, Garnish?, ServingSuggestions, MixingSuggestions)>
+<!ELEMENT Color (#PCDATA)>
+<!ELEMENT Taste (Category, Description)>
+<!ELEMENT Category (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+<!ELEMENT Garnish (#PCDATA)>
+<!ELEMENT ServingSuggestions (#PCDATA)>
+<!ELEMENT MixingSuggestions (#PCDATA)>
+<!ELEMENT PurchaseLocations (Location+)>
+<!ELEMENT TastingLocations (Location+)>
+<!ELEMENT Location (Name, Address, URL)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Address (#PCDATA)>
+<!ELEMENT URL (#PCDATA)>

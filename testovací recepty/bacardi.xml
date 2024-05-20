@@ -1,0 +1,46 @@
+<AlcoholExperiences>
+  <AlcoholExperience>
+    <Type>Rum</Type>
+    <Brand>Bacardi</Brand>
+    <History>Bacardi is a famous brand of rum originating from Cuba. Founded in 1862 by Facundo Bacardí Massó, it has grown to become one of the largest privately held, family-owned spirits companies in the world. Bacardi rum is renowned for its smoothness and versatility, making it a popular choice for cocktails and mixed drinks.</History>
+    <Details>
+      <Color>Clear</Color>
+      <Taste>
+        <Category>Light and Crisp</Category>
+        <Description>Light-bodied with subtle hints of vanilla and tropical fruits.</Description>
+      </Taste>
+      <Garnish>Lime wedge</Garnish>
+      <ServingSuggestions>Best enjoyed in classic cocktails like Mojitos, Piña Coladas, and Daiquiris.</ServingSuggestions>
+      <MixingSuggestions>Perfect for mixing with fruit juices, soda, or tonic water to create refreshing cocktails.</MixingSuggestions>
+    </Details>
+    <PurchaseLocations>
+      <Location>
+        <Name>Liquor World</Name>
+        <Address>789 Sunset Blvd, Anytown, USA</Address>
+        <URL>http://liquorworld.com</URL>
+      </Location>
+      <Location>
+        <Name>Island Spirits Market</Name>
+        <Address>456 Ocean Ave, Beachtown, USA</Address>
+        <URL>http://islandspiritsmarket.com</URL>
+      </Location>
+      <Location>
+        <Name>Online Retailer</Name>
+        <Address>Website: www.exampleliquor.com</Address>
+        <URL>http://www.exampleliquor.com/bacardi</URL>
+      </Location>
+    </PurchaseLocations>
+    <TastingLocations>
+      <Location>
+        <Name>Tropical Bar</Name>
+        <Address>123 Palm Beach Rd, Island City, USA</Address>
+        <URL>http://tropicalbar.com</URL>
+      </Location>
+      <Location>
+        <Name>Beachfront Lounge</Name>
+        <Address>789 Seaside Dr, Beachtown, USA</Address>
+        <URL>http://beachfrontlounge.com</URL>
+      </Location>
+    </TastingLocations>
+  </AlcoholExperience>
+</AlcoholExperiences>

@@ -1,5 +1,4 @@
 <?php
-
 // seznam jmen XML souborů
 function xmlFileList($dir)
 {
@@ -17,12 +16,8 @@ function xmlPrintErrors()
     <table>
         <?php foreach (libxml_get_errors() as $error) { ?>
             <tr>
-                <td>
-                    <?= $error->line ?>
-                </td>
-                <td>
-                    <?= $error->message ?>
-                </td>
+                <td><?= $error->line ?></td>
+                <td><?= $error->message ?></td>
             </tr>
         <?php } ?>
     </table>
@@ -100,3 +95,4 @@ function xmlTransform($xmlPath, $xslPath): false|string
 
     return $xslt->transformToXml($xml);
 }
+?>

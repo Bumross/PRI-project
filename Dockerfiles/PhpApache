@@ -17,5 +17,3 @@ RUN apt install -y mc vim nano
 # adresář, do kterého Apache (uživatel: www-data) smí psát
 RUN mkdir -p /var/mydb/posts
 RUN chown www-data /var/mydb/posts
-RUN mkdir -p /var/mydb/users
-RUN chown www-data /var/mydb/users

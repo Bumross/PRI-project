@@ -66,12 +66,12 @@ function registerUser($name, $password) {
 
 
 
-function precteno(string $drink): int
+function views(string $post): int
 {
-    $drink = dbEscape($drink);
+    $post = dbEscape($post);
 
-    dbQuery("insert into drinky (nazev, precteno) value($drink, 1) on duplicate key update precteno = precteno+1");
-    $result = dbQuery("select precteno from drinky where nazev=$drink");
-    [[$precteno]] = $result->fetch_all();
-    return $precteno;
+    dbQuery("insert into posts (name, views) value($post, 1) on duplicate key update views = views+1");
+    $result = dbQuery("select views from posts where name=$post");
+    [[$views]] = $result->fetch_all();
+    return $views;
 }

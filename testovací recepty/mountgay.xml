@@ -1,0 +1,46 @@
+<AlcoholExperiences>
+  <AlcoholExperience>
+    <Type>Rum</Type>
+    <Brand>Mount Gay</Brand>
+    <History>Mount Gay is a brand of rum produced in Barbados. It is one of the oldest rum brands in the world, with origins dating back to 1703. Mount Gay is known for its smooth and complex flavor profile, making it a favorite among rum enthusiasts worldwide.</History>
+    <Details>
+      <Color>Golden</Color>
+      <Taste>
+        <Category>Rich</Category>
+        <Description>Rich with notes of caramel, vanilla, and tropical fruits.</Description>
+      </Taste>
+      <Garnish>Lime wedge or pineapple slice</Garnish>
+      <ServingSuggestions>Best enjoyed neat, on the rocks, or in classic cocktails like Mojito, Daiquiri, or Rum Punch.</ServingSuggestions>
+      <MixingSuggestions>Perfect for mixing in cocktails such as Piña Colada or Mai Tai.</MixingSuggestions>
+    </Details>
+    <PurchaseLocations>
+      <Location>
+        <Name>Liquor Mart</Name>
+        <Address>456 Ocean Ave, Beachtown, Barbados</Address>
+        <URL>http://liquormart.bb</URL>
+      </Location>
+      <Location>
+        <Name>Barbados Duty-Free</Name>
+        <Address>Grantley Adams International Airport, Barbados</Address>
+        <URL>http://barbadosdutyfree.com</URL>
+      </Location>
+      <Location>
+        <Name>Online Retailer</Name>
+        <Address>Website: www.exampleliquor.com</Address>
+        <URL>http://www.exampleliquor.com/mount-gay</URL>
+      </Location>
+    </PurchaseLocations>
+    <TastingLocations>
+      <Location>
+        <Name>Rum Distillery Tour</Name>
+        <Address>Mount Gay Visitor Center, Spring Garden Highway, Bridgetown, Barbados</Address>
+        <URL>http://mountgayrum.com/tours</URL>
+      </Location>
+      <Location>
+        <Name>Beachside Bar</Name>
+        <Address>123 Sandy Beach Rd, Beachtown, Barbados</Address>
+        <URL>http://beachsidebar.bb</URL>
+      </Location>
+    </TastingLocations>
+  </AlcoholExperience>
+</AlcoholExperiences>

@@ -1,7 +1,7 @@
 <?php // přečti a odešli XML soubor s receptem
 
-$drink = @$_GET['drink'];
-$file = "/var/mixolog/drinks/$drink.xml";
+$post = @$_GET['post'];
+$file = "/var/mydb/posts/$post.xml";
 
 header("Content-type: text/xml;");
 if (file_exists($file))

@@ -1,0 +1,46 @@
+<AlcoholExperiences>
+  <AlcoholExperience>
+    <Type>Whiskey</Type>
+    <Brand>Jim Beam</Brand>
+    <History>Jim Beam is a brand of bourbon whiskey produced in Clermont, Kentucky, USA. It was founded in 1795 by Jacob Beam. Over the years, it has become one of the best-selling brands of bourbon in the world, known for its smooth flavor and rich history.</History>
+    <Details>
+      <Color>Amber</Color>
+      <Taste>
+        <Category>Smooth</Category>
+        <Description>Smooth with hints of oak, caramel, and vanilla.</Description>
+      </Taste>
+      <Garnish>Lemon twist or cherry</Garnish>
+      <ServingSuggestions>Neat, on the rocks, or in cocktails such as Old Fashioned, Whiskey Sour, or Manhattan.</ServingSuggestions>
+      <MixingSuggestions>Perfect for cocktails like Whiskey Sour or simply on the rocks. Can also be mixed with cola for a classic Bourbon and Coke.</MixingSuggestions>
+    </Details>
+    <PurchaseLocations>
+      <Location>
+        <Name>ABC Liquor Store</Name>
+        <Address>123 Main St, Anytown, USA</Address>
+        <URL>http://example.com/abc-liquor</URL>
+      </Location>
+      <Location>
+        <Name>Craft Spirits Emporium</Name>
+        <Address>789 Oak Ave, Othertown, USA</Address>
+        <URL>http://example.com/craft-spirits</URL>
+      </Location>
+      <Location>
+        <Name>Online Retailer</Name>
+        <Address>Website: www.exampleliquor.com</Address>
+        <URL>http://www.exampleliquor.com/jim-beam</URL>
+      </Location>
+    </PurchaseLocations>
+    <TastingLocations>
+      <Location>
+        <Name>The Whiskey Bar</Name>
+        <Address>456 Elm St, Othertown, USA</Address>
+        <URL>http://example.com/whiskey-bar</URL>
+      </Location>
+      <Location>
+        <Name>City Spirits Tasting Room</Name>
+        <Address>789 Maple Dr, Anycity, USA</Address>
+        <URL>http://example.com/city-spirits</URL>
+      </Location>
+    </TastingLocations>
+  </AlcoholExperience>
+</AlcoholExperiences>

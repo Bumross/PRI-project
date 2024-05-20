@@ -1,0 +1,67 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="AlcoholExperiences">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="AlcoholExperience" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Type" type="xs:string"/>
+              <xs:element name="Brand" type="xs:string"/>
+              <xs:element name="History" type="xs:string" minOccurs="0"/>
+              <xs:element name="Details">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Color" type="xs:string"/>
+                    <xs:element name="Taste">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Category" type="xs:string"/>
+                          <xs:element name="Description" type="xs:string"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Garnish" type="xs:string" minOccurs="0"/>
+                    <xs:element name="ServingSuggestions" type="xs:string"/>
+                    <xs:element name="MixingSuggestions" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="PurchaseLocations">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Location" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Name" type="xs:string"/>
+                          <xs:element name="Address" type="xs:string"/>
+                          <xs:element name="URL" type="xs:string"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="TastingLocations">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Location" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Name" type="xs:string"/>
+                          <xs:element name="Address" type="xs:string"/>
+                          <xs:element name="URL" type="xs:string"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
