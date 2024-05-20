@@ -1,0 +1,46 @@
+<AlcoholExperiences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="alcohol_experiences.xsd">
+  <AlcoholExperience>
+    <Type>Vodka</Type>
+    <Brand>Absolut</Brand>
+    <History>Absolut is a Swedish brand of vodka known for its iconic bottle design and premium quality. Founded in 1879 by Lars Olsson Smith, it revolutionized the vodka market by introducing continuous distillation methods. Absolut vodka is celebrated for its smooth taste and extensive range of flavored variants.</History>
+    <Details>
+      <Color>Clear</Color>
+      <Taste>
+        <Category>Smooth and Distinctive</Category>
+        <Description>Absolut vodka offers a smooth and distinctive taste with a rich character. It is characterized by its pure and velvety texture, making it suitable for both sipping and mixing.</Description>
+      </Taste>
+      <Garnish>Lime wedge or cucumber slice</Garnish>
+      <ServingSuggestions>Best enjoyed in classic cocktails like Vodka Gimlet, Cosmopolitan, or Absolut Mule, or served chilled with a splash of soda water.</ServingSuggestions>
+      <MixingSuggestions>Perfect for creating a variety of cocktails, from fruity martinis to refreshing long drinks, Absolut vodka complements a wide range of mixers and flavors.</MixingSuggestions>
+    </Details>
+    <PurchaseLocations>
+      <Location>
+        <Name>Liquor Boutique</Name>
+        <Address>123 Vodka Street, Stockholm, Sweden</Address>
+        <URL>http://liquorboutique.se</URL>
+      </Location>
+      <Location>
+        <Name>Swedish Spirits Emporium</Name>
+        <Address>456 Absolut Avenue, Gothenburg, Sweden</Address>
+        <URL>http://swedishspirits.se</URL>
+      </Location>
+      <Location>
+        <Name>Online Retailer</Name>
+        <Address>Website: www.examplevodka.se</Address>
+        <URL>http://www.examplevodka.se/absolut</URL>
+      </Location>
+    </PurchaseLocations>
+    <TastingLocations>
+      <Location>
+        <Name>Vodka Distillery Tour</Name>
+        <Address>Absolut Distillery, Åhus, Sweden</Address>
+        <URL>http://absolutdistillery.se</URL>
+      </Location>
+      <Location>
+        <Name>Vodka Bar</Name>
+        <Address>789 Vodka Road, Malmo, Sweden</Address>
+        <URL>http://vodkabar.se</URL>
+      </Location>
+    </TastingLocations>
+  </AlcoholExperience>
+</AlcoholExperiences>

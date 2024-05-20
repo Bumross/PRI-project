@@ -9,11 +9,7 @@ $filterType = null;
 if (isset($_GET['type'])) {
     $filterType = $_GET['type'];
 }
-
 ?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

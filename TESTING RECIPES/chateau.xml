@@ -1,0 +1,46 @@
+<AlcoholExperiences>
+  <AlcoholExperience>
+    <Type>Wine</Type>
+    <Brand>Château Lafite Rothschild</Brand>
+    <History>Château Lafite Rothschild is one of the most prestigious wine estates in the Bordeaux region of France. Dating back to the 17th century, it has a long and illustrious history of producing some of the world's finest wines. The estate has been owned by the Rothschild family since the 19th century and is renowned for its commitment to quality and tradition.</History>
+    <Details>
+      <Color>Red</Color>
+      <Taste>
+        <Category>Elegant and Refined</Category>
+        <Description>Rich and velvety with notes of blackcurrant, plum, cedar, and tobacco, Château Lafite Rothschild offers an elegant and refined flavor profile with silky smooth tannins and a long, lingering finish.</Description>
+      </Taste>
+      <Garnish>N/A</Garnish>
+      <ServingSuggestions>Best enjoyed with fine cuisine such as roasted lamb, beef Wellington, or aged cheese, or savored on its own to fully appreciate its complexity and depth.</ServingSuggestions>
+      <MixingSuggestions>N/A</MixingSuggestions>
+    </Details>
+    <PurchaseLocations>
+      <Location>
+        <Name>Château Lafite Rothschild Estate</Name>
+        <Address>33250 Pauillac, France</Address>
+        <URL>http://www.lafiterothschild.com</URL>
+      </Location>
+      <Location>
+        <Name>Wine Merchant</Name>
+        <Address>456 Wine Street, Bordeaux, France</Address>
+        <URL>http://winemerchant.fr</URL>
+      </Location>
+      <Location>
+        <Name>Online Retailer</Name>
+        <Address>Website: www.examplewine.com</Address>
+        <URL>http://www.examplewine.com/lafiterothschild</URL>
+      </Location>
+    </PurchaseLocations>
+    <TastingLocations>
+      <Location>
+        <Name>Château Lafite Rothschild Winery Tour</Name>
+        <Address>Château Lafite Rothschild, Pauillac, France</Address>
+        <URL>http://www.lafiterothschild.com/tours</URL>
+      </Location>
+      <Location>
+        <Name>Wine Bar</Name>
+        <Address>789 Wine Avenue, Bordeaux, France</Address>
+        <URL>http://winebarbordeaux.fr</URL>
+      </Location>
+    </TastingLocations>
+  </AlcoholExperience>
+</AlcoholExperiences>

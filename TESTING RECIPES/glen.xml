@@ -1,0 +1,46 @@
+<AlcoholExperiences>
+  <AlcoholExperience>
+    <Type>Whisky</Type>
+    <Brand>Glenfiddich</Brand>
+    <History>Glenfiddich is a renowned Scotch whisky brand established in 1887 by William Grant & Sons in Dufftown, Scotland. It is one of the few remaining family-owned distilleries, known for its tradition of excellence and innovation. Glenfiddich is celebrated for its range of single malts, offering a diverse array of flavors and expressions.</History>
+    <Details>
+      <Color>Golden Amber</Color>
+      <Taste>
+        <Category>Rich and Fruity</Category>
+        <Description>Glenfiddich whisky is characterized by its rich and fruity flavor profile, with notes of pear, apple, and oak. It offers a smooth and balanced taste, making it a favorite among whisky enthusiasts.</Description>
+      </Taste>
+      <Garnish>None</Garnish>
+      <ServingSuggestions>Best enjoyed neat, on the rocks, or with a splash of water to unlock its full flavor profile.</ServingSuggestions>
+      <MixingSuggestions>Glenfiddich whisky is typically not used in cocktails, as it is prized for sipping and savoring on its own.</MixingSuggestions>
+    </Details>
+    <PurchaseLocations>
+      <Location>
+        <Name>Whisky World</Name>
+        <Address>789 Whisky Ave, Dufftown, Scotland</Address>
+        <URL>http://whiskyworld.co.uk</URL>
+      </Location>
+      <Location>
+        <Name>Scottish Spirits Emporium</Name>
+        <Address>456 Oak St, Speyside, Scotland</Address>
+        <URL>http://scottishspirits.co.uk</URL>
+      </Location>
+      <Location>
+        <Name>Online Retailer</Name>
+        <Address>Website: www.examplewhisky.com</Address>
+        <URL>http://www.examplewhisky.com/glenfiddich</URL>
+      </Location>
+    </PurchaseLocations>
+    <TastingLocations>
+      <Location>
+        <Name>Whisky Distillery Tour</Name>
+        <Address>Glenfiddich Distillery, Dufftown, Scotland</Address>
+        <URL>http://glenfiddichtours.co.uk</URL>
+      </Location>
+      <Location>
+        <Name>Whisky Bar</Name>
+        <Address>123 Whisky Lane, Speyside, Scotland</Address>
+        <URL>http://whiskybar.co.uk</URL>
+      </Location>
+    </TastingLocations>
+  </AlcoholExperience>
+</AlcoholExperiences>

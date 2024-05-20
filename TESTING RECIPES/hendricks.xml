@@ -2,27 +2,27 @@
   <AlcoholExperience>
     <Type>Gin</Type>
     <Brand>Hendrick's</Brand>
-    <History>Hendrick's Gin is a unique and unconventional gin crafted by William Grant & Sons in Girvan, Scotland. Introduced in 1999, it quickly gained popularity for its distinctive taste and elegant presentation, featuring cucumber and rose petal infusions. Hendrick's Gin is celebrated for its eccentricity and has become a favorite among gin enthusiasts seeking a more refined and imaginative drinking experience.</History>
+    <History>Hendrick's Gin is a unique brand of gin that was first introduced in 1999 by William Grant & Sons in Girvan, Scotland. It quickly gained attention for its unconventional infusion of rose petals and cucumber, setting it apart from traditional gins.</History>
     <Details>
       <Color>Clear</Color>
       <Taste>
-        <Category>Floral and Aromatic</Category>
-        <Description>Delicate and floral with notes of rose, cucumber, and a hint of citrus, balanced by traditional botanicals like juniper and coriander.</Description>
+        <Category>Floral and Refreshing</Category>
+        <Description>Hendrick's Gin offers a distinctive taste characterized by floral notes from the infusion of rose petals, balanced with the refreshing essence of cucumber. This combination creates a smooth and crisp flavor profile that appeals to gin enthusiasts seeking something different.</Description>
       </Taste>
-      <Garnish>Cucumber slice and/or rose petal</Garnish>
-      <ServingSuggestions>Best enjoyed in classic cocktails like Gin and Tonic, Martini, or Tom Collins.</ServingSuggestions>
-      <MixingSuggestions>Perfect for mixing with tonic water or in cocktails like Elderflower Collins or Cucumber Cooler.</MixingSuggestions>
+      <Garnish>Cucumber slice or twist of lemon peel</Garnish>
+      <ServingSuggestions>Hendrick's Gin is best enjoyed in a classic Gin and Tonic, served with a slice of cucumber to enhance its refreshing qualities. It also complements a variety of mixers, such as elderflower tonic or ginger ale, for a unique and flavorful cocktail experience.</ServingSuggestions>
+      <MixingSuggestions>For a sophisticated cocktail, try mixing Hendrick's Gin with a splash of dry vermouth and garnish with a cucumber twist for a refreshing Martini variation.</MixingSuggestions>
     </Details>
     <PurchaseLocations>
       <Location>
         <Name>Gin Emporium</Name>
-        <Address>789 Botanical Blvd, Girvan, Scotland</Address>
+        <Address>789 Juniper Lane, Girvan, Scotland</Address>
         <URL>http://ginemporium.co.uk</URL>
       </Location>
       <Location>
-        <Name>Gin Palace</Name>
-        <Address>456 Juniper Ave, London, England</Address>
-        <URL>http://ginpalace.co.uk</URL>
+        <Name>Liquor Superstore</Name>
+        <Address>456 Botanical Blvd, Edinburgh, Scotland</Address>
+        <URL>http://liquorsuperstore.co.uk</URL>
       </Location>
       <Location>
         <Name>Online Retailer</Name>
@@ -34,12 +34,12 @@
       <Location>
         <Name>Gin Distillery Tour</Name>
         <Address>Hendrick's Gin Distillery, Girvan, Scotland</Address>
-        <URL>http://hendricksdistillerytours.co.uk</URL>
+        <URL>http://hendricksgintours.co.uk</URL>
       </Location>
       <Location>
-        <Name>Cocktail Lounge</Name>
-        <Address>123 Floral St, London, England</Address>
-        <URL>http://cocktaillounge.co.uk</URL>
+        <Name>Gin Bar</Name>
+        <Address>123 Juniper Street, Edinburgh, Scotland</Address>
+        <URL>http://ginbar.co.uk</URL>
       </Location>
     </TastingLocations>
   </AlcoholExperience>

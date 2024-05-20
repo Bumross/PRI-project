@@ -1,0 +1,46 @@
+<AlcoholExperiences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="alcohol_experiences.xsd">
+  <AlcoholExperience>
+    <Type>Vodka</Type>
+    <Brand>Stolichnaya</Brand>
+    <History>Stolichnaya, commonly known as Stoli, is a well-known brand of Russian vodka. Established in 1938 in the Soviet Union, it has a long history of producing high-quality vodka using traditional methods. Stolichnaya is celebrated for its smooth taste and versatility in cocktails.</History>
+    <Details>
+      <Color>Clear</Color>
+      <Taste>
+        <Category>Neutral</Category>
+        <Description>Stolichnaya vodka has a neutral flavor profile, making it suitable for a wide range of cocktails. It offers a clean and crisp taste with a subtle sweetness.</Description>
+      </Taste>
+      <Garnish>Lemon twist or olive</Garnish>
+      <ServingSuggestions>Best enjoyed in classic cocktails like Vodka Martini, Bloody Mary, or Moscow Mule, or simply served chilled or on the rocks.</ServingSuggestions>
+      <MixingSuggestions>Perfect for mixing with fruit juices, soda water, or tonic for refreshing vodka cocktails.</MixingSuggestions>
+    </Details>
+    <PurchaseLocations>
+      <Location>
+        <Name>Liquor Store</Name>
+        <Address>123 Vodka Lane, Moscow, Russia</Address>
+        <URL>http://liquorstore.ru</URL>
+      </Location>
+      <Location>
+        <Name>Russian Spirits Emporium</Name>
+        <Address>456 Kremlin St, St. Petersburg, Russia</Address>
+        <URL>http://russianspirits.ru</URL>
+      </Location>
+      <Location>
+        <Name>Online Retailer</Name>
+        <Address>Website: www.examplevodka.ru</Address>
+        <URL>http://www.examplevodka.ru/stoli</URL>
+      </Location>
+    </PurchaseLocations>
+    <TastingLocations>
+      <Location>
+        <Name>Vodka Distillery Tour</Name>
+        <Address>Stolichnaya Distillery, Moscow, Russia</Address>
+        <URL>http://stolidistillery.ru</URL>
+      </Location>
+      <Location>
+        <Name>Vodka Bar</Name>
+        <Address>789 Vodka Ave, Novosibirsk, Russia</Address>
+        <URL>http://vodkabar.ru</URL>
+      </Location>
+    </TastingLocations>
+  </AlcoholExperience>
+</AlcoholExperiences>

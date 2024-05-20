@@ -1,0 +1,46 @@
+<AlcoholExperiences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="alcohol_experiences.xsd">
+  <AlcoholExperience>
+    <Type>Rum</Type>
+    <Brand>Božkov</Brand>
+    <History>Božkov is a renowned brand of rum originating from the Czech Republic. Founded in 1927 by Jan Becher, it has become a staple in the Czech spirits market. Božkov rum is known for its rich flavor and quality craftsmanship.</History>
+    <Details>
+      <Color>Dark Amber</Color>
+      <Taste>
+        <Category>Rich and Spicy</Category>
+        <Description>Božkov rum offers a rich and spicy flavor profile, characterized by notes of caramel, oak, and spices. Its smooth finish makes it ideal for sipping neat or as a base for cocktails.</Description>
+      </Taste>
+      <Garnish>Orange peel or cinnamon stick</Garnish>
+      <ServingSuggestions>Best enjoyed neat, on the rocks, or in classic cocktails like Cuba Libre or Mojito.</ServingSuggestions>
+      <MixingSuggestions>Perfect for mixing in cocktails such as Daiquiri or Rum Old Fashioned, or as a base in hot drinks like Hot Buttered Rum.</MixingSuggestions>
+    </Details>
+    <PurchaseLocations>
+      <Location>
+        <Name>Liquor Store</Name>
+        <Address>123 Rum Lane, Prague, Czech Republic</Address>
+        <URL>http://liquorstore.cz</URL>
+      </Location>
+      <Location>
+        <Name>Czech Spirits Emporium</Name>
+        <Address>456 Spirit St, Brno, Czech Republic</Address>
+        <URL>http://czechspirits.cz</URL>
+      </Location>
+      <Location>
+        <Name>Online Retailer</Name>
+        <Address>Website: www.exampleliquor.cz</Address>
+        <URL>http://www.exampleliquor.cz/bozkov</URL>
+      </Location>
+    </PurchaseLocations>
+    <TastingLocations>
+      <Location>
+        <Name>Rum Distillery Tour</Name>
+        <Address>Božkov Distillery, Prague, Czech Republic</Address>
+        <URL>http://bozkovdistillery.cz</URL>
+      </Location>
+      <Location>
+        <Name>Spirits Bar</Name>
+        <Address>789 Spirit Blvd, Ostrava, Czech Republic</Address>
+        <URL>http://spiritsbar.cz</URL>
+      </Location>
+    </TastingLocations>
+  </AlcoholExperience>
+</AlcoholExperiences>

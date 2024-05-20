@@ -14,6 +14,3 @@ if (isLoggedIn())
 
 if (isLoggedIn())
     $pages['/upload.php'] = 'Upload';
-
-if (isLoggedIn())
-    $pages['/myposts.php'] = 'My posts';

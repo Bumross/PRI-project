@@ -1,4 +1,4 @@
-<?php // úvodní stránka:
+<?php // Welcome page:
 require '../prolog.php';
 require INC . '/html-begin.php';
 require INC . '/nav.php';
@@ -11,49 +11,49 @@ require INC . '/nav.php';
     <?= TITLE ?>
   </h1>
 
-    <h2>Welcome to Top-Shelf: Your Ultimate Guide to Fine Spirits</h2>
+    <h2>Welcome to Top-Shelf: Your Family-Friendly Guide to Quality Spirits</h2>
 
   <div class="text-box">
-    <h3>At Top-Shelf, we bring together connoisseurs, casual drinkers, and everyone in between to explore the fascinating world of premium alcohol. Whether you’re seeking to expand your palate, discover the rich history behind your favorite spirits, or find the perfect bottle for any occasion, you’ve come to the right place.</h3>
+    <h3>At Top-Shelf, we provide a family-friendly platform to explore the world of premium alcohol responsibly. Whether you’re interested in learning about the rich history and diverse flavors of spirits or seeking recommendations for your next gathering, we're here to help.</h3>
   </div>
 
   <h2>What We Offer:</h2>
   <div class="grid-container">
     <div class="content-box">
-      <p><strong>Extensive Catalog of Spirits:</strong><br>
-      Dive into our comprehensive database featuring a wide variety of alcohol types, including whiskies, vodkas, rums, gins, tequilas, wines, and more. Each entry provides detailed information, tasting notes, and user reviews to help you make informed decisions.</p>
+      <p><strong>Comprehensive Collection of Spirits:</strong><br>
+      Explore our extensive database featuring a diverse selection of alcohol types, including whiskies, vodkas, rums, gins, tequilas, wines, and more. Each entry provides detailed information, tasting notes, and recommendations for responsible consumption.</p>
     </div>
 
     <div class="content-box">
-      <p><strong>In-Depth Histories:</strong><br>
-      Uncover the stories behind the spirits. Learn about the origins, production methods, and cultural significance of different types of alcohol from around the globe. Our expertly researched articles offer a rich historical context that enhances your drinking experience.</p>
+      <p><strong>Insightful Histories:</strong><br>
+      Delve into the fascinating stories behind your favorite spirits. Learn about their origins, production methods, and cultural significance in a family-friendly environment. Our articles are meticulously researched to provide engaging and educational content for all audiences.</p>
     </div>
 
     <div class="content-box">
-      <p><strong>Personalized Recommendations:</strong><br>
-      Not sure what to try next? Our tailored recommendation system takes your preferences into account to suggest new and exciting bottles that match your taste profile. From rare finds to popular favorites, discover something new every time you visit.</p>
+      <p><strong>Helpful Recommendations:</strong><br>
+      Unsure of what to try next? Our personalized recommendation system suggests new and exciting bottles based on your preferences. Whether you’re looking for a special occasion or everyday enjoyment, we have something for every palate.</p>
     </div>
 
     <div class="content-box">
-      <p><strong>Community Reviews and Ratings:</strong><br>
-      Join a vibrant community of enthusiasts. Share your own reviews and ratings, exchange tips, and engage in discussions with fellow spirit lovers. Your insights and experiences help others make their best choices.</p>
+      <p><strong>User-Generated Content:</strong><br>
+      Join our community of responsible drinkers. Share your own experiences, reviews, and tips with other enthusiasts. Together, we create a supportive and informative environment that promotes safe and enjoyable alcohol exploration.</p>
     </div>
 
     <div class="content-box">
-      <p><strong>Exclusive Content and Features:</strong><br>
-      Enjoy access to exclusive interviews with industry experts, distillery tours, cocktail recipes, and more. Our regularly updated content keeps you in the loop with the latest trends and innovations in the world of alcohol.</p>
+      <p><strong>Exclusive Features:</strong><br>
+      Gain access to exclusive interviews, behind-the-scenes tours, and family-friendly cocktail recipes. Our regularly updated content ensures that there’s always something new to discover and enjoy.</p>
     </div>
   </div>
 
   <div class="text-box">
-    <h2>Why Top-Shelf?</h2>
-    <p>Top-Shelf is more than just a database; it's a curated experience designed for those who appreciate the finer things in life. Our mission is to educate, inspire, and connect through the shared love of quality spirits. Whether you’re a seasoned aficionado or a curious newcomer, Top-Shelf is your trusted companion on this flavorful journey.</p>
+    <h2>Why Choose Top-Shelf?</h2>
+    <p>Top-Shelf is your trusted resource for exploring the world of quality spirits in a family-friendly setting. Our mission is to provide education, inspiration, and connection for individuals who appreciate the finer things in life. Whether you’re a seasoned enthusiast or just beginning your journey, Top-Shelf is here to enhance your alcohol experience with integrity and responsibility.</p>
   </div>
 
 
-    <h3>Ready to elevate your drinking experience? Browse our extensive selection, read up on the fascinating histories, and join our community of like-minded enthusiasts. With Top-Shelf, every bottle has a story, and every sip is an adventure.</h3>
+    <h3>Are you ready to embark on a flavorful adventure? Explore our collection, learn about the fascinating histories, and join our community of responsible drinkers. With Top-Shelf, every bottle tells a story, and every sip is an experience to be enjoyed.</h3>
 
-    <h2>Welcome to the top tier of spirit exploration. Welcome to Top-Shelf.</h2>
+    <h2>Welcome to the top tier of family-friendly spirit exploration. Welcome to Top-Shelf.</h2>
 </main>
 
 <?php require INC . '/html-end.php'; ?>
