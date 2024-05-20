@@ -2,7 +2,7 @@
 // Database functions
 
 // global connect to db
-$_db_ = mysqli_connect("database", "admin", "password") or die;
+$_db_ = mysqli_connect("database", "admin", "heslo") or die;
 
 // database query
 function dbQuery(string $query): bool|mysqli_result

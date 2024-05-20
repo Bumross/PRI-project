@@ -10,7 +10,7 @@ require INC . '/db.php';
 
 <div class="bg-zinc-50 flex justify-center">
     <ol class="fa-ul">
-        <?php foreach (xmlFileList(DRINKS) as $basename) { ?>
+        <?php foreach (xmlFileList(POSTS) as $basename) { ?>
             <li>
                 <i class="fa fa-li fa-glass"></i>
                 <a class="hover:underline" href="?drink=<?= $basename ?>">

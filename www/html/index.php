@@ -13,7 +13,12 @@ require INC . '/nav.php';
   h2 {
     font-size: 2em;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+  }
+  h3 {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 2px;
   }
   .text-box {
     padding: 20px;
@@ -21,19 +26,27 @@ require INC . '/nav.php';
     text-align: center;
     width: 100%;
     box-sizing: border-box;
+    background-color: #1f2937; /* Darker background color */
+    color: #ffffff; /* Lighter text color */
   }
   .content-box {
-    border: 2px solid #000;
+    border: 2px solid #000; /* Keep the border for normal boxes */
     padding: 20px;
     margin: 10px;
     width: calc(33.333% - 20px);
     text-align: center;
-    transition: transform 0.3s, font-size 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, font-size 0.3s, box-shadow 0.3s; /* Removed transition for background-color */
+    box-sizing: border-box;
+    background-color: #1f2937;
+    border: none;
   }
   .content-box:hover {
     transform: scale(1.05);
     font-size: 1.1em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none; /* Remove border on hover */
+     /* Darker background color on hover */
+    background-color: #374151;
   }
   .grid-container {
     display: flex;
@@ -48,12 +61,10 @@ require INC . '/nav.php';
     <?= TITLE ?>
   </h1>
 
-  <div class="text-box">
     <h2>Welcome to Top-Shelf: Your Ultimate Guide to Fine Spirits</h2>
-  </div>
 
   <div class="text-box">
-    <p>At Top-Shelf, we bring together connoisseurs, casual drinkers, and everyone in between to explore the fascinating world of premium alcohol. Whether you’re seeking to expand your palate, discover the rich history behind your favorite spirits, or find the perfect bottle for any occasion, you’ve come to the right place.</p>
+    <h3>At Top-Shelf, we bring together connoisseurs, casual drinkers, and everyone in between to explore the fascinating world of premium alcohol. Whether you’re seeking to expand your palate, discover the rich history behind your favorite spirits, or find the perfect bottle for any occasion, you’ve come to the right place.</h3>
   </div>
 
   <h2>What We Offer:</h2>
@@ -89,13 +100,10 @@ require INC . '/nav.php';
     <p>Top-Shelf is more than just a database; it's a curated experience designed for those who appreciate the finer things in life. Our mission is to educate, inspire, and connect through the shared love of quality spirits. Whether you’re a seasoned aficionado or a curious newcomer, Top-Shelf is your trusted companion on this flavorful journey.</p>
   </div>
 
-  <div class="text-box">
-    <p>Ready to elevate your drinking experience? Browse our extensive selection, read up on the fascinating histories, and join our community of like-minded enthusiasts. With Top-Shelf, every bottle has a story, and every sip is an adventure.</p>
-  </div>
 
-  <div class="text-box">
+    <h3>Ready to elevate your drinking experience? Browse our extensive selection, read up on the fascinating histories, and join our community of like-minded enthusiasts. With Top-Shelf, every bottle has a story, and every sip is an adventure.</h3>
+
     <h2>Welcome to the top tier of spirit exploration. Welcome to Top-Shelf.</h2>
-  </div>
 </main>
 
 <?php require INC . '/html-end.php'; ?>

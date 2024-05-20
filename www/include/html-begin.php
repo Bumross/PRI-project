@@ -12,6 +12,8 @@
     </title>
     <style>
         body {
+            background-color: #1a202c; /* Darker background color */
+            color: #ffffff; /* Lighter text color */
             display: flex;
             flex-direction: column;
             align-items: center;
