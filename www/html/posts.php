@@ -14,7 +14,7 @@ require INC . '/db.php';
             <li>
                 <i class="fa fa-li fa-glass"></i>
                 <a class="hover:underline" href="?drink=<?= $basename ?>">
-                    <?= $basename ?> (<?= precteno($basename) ?>)
+                    <?= $basename ?> (<?= views($basename) ?>)
                 </a>
             </li>
         <?php } ?>
@@ -25,16 +25,16 @@ require INC . '/db.php';
     <?php // zvolený drink:
     if ($drink = @$_GET['drink']) {
         if (TRANSFORM_SERVER_SIDE) { ?>
-            <?= xmlTransform(DRINKS . "/$drink.xml", XML . '/recept.xsl') ?>
+            <?= xmlTransform(DRINKS . "/$drink.xml", XML . '/post.xsl') ?>
         <?php } else { ?>
-            <h2 id="nazev" class="text-center text-2xl m-4" />
+            <h2 id="name" class="text-center text-2xl m-4" />
             <script>
                 loadXML(
                     "/serve/getDrink.php?drink=<?= $drink ?>",
                     (xmlDom) => {
                         // zde je možné pracovat s DOM ...
-                        document.getElementById("nazev").innerHTML =
-                            xmlDom.getElementsByTagName("název")[0].textContent;
+                        document.getElementById("name").innerHTML =
+                            xmlDom.getElementsByTagName("name")[0].textContent;
                         // ... atd.
                     })
             </script>

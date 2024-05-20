@@ -1,50 +1,76 @@
 <?php
-// --- databázové funkce ---
+// Database functions
 
-// globální objekt - připojí databázi - vitální!
-$_db_ = mysqli_connect("database", "admin", "heslo", "mixolog") or die;
+// global connect to db
+$_db_ = mysqli_connect("database", "admin", "password") or die;
 
-// dotaz k databázi
+// database query
 function dbQuery(string $query): bool|mysqli_result
 {
     global $_db_;
     return @$_db_->query($query);
 }
 
-// bezpečné uzavření řetězu do uvozovek pro SQL
+
+
 function dbEscape(string $s): string
 {
     global $_db_;
     return "'" . mysqli_real_escape_string($_db_, $s) . "'";
 }
 
-// autentikace uživatele
-function authUser(string $jmeno, string $heslo): bool
-{
-    $jmeno = dbEscape($jmeno);
-    $heslo = dbEscape($heslo);
 
-    if ($result = dbQuery("select id from uzivatele where jmeno=$jmeno and heslo=$heslo")) {
-        if ($result->num_rows) {
-            // fetch_all() vrací pole polí (řádky, a každá má políčka)
-            // [[$id]] je dekonstrukce: vezme první hodnotu z první řádky
-            [[$id]] = $result->fetch_all();
-            if ($id)
-                return true;
+
+function authUser(string $name, string $password): bool
+{
+    global $_db_;
+
+    $name = dbEscape($name);
+
+    $query = $_db_->prepare("SELECT password FROM users WHERE name = ?");
+    $query->bind_param("s", $name);
+    $query->execute();
+    $result = $query->get_result();
+
+    if ($result->num_rows == 1) {
+        $row = $result->fetch_assoc();
+        $password = $row['password'];
+
+        if (password_verify($password)) {
+            return true;
         }
     }
 
     return false;
 }
 
-// sledujeme popularitu drinku
+
+
+function registerUser($name, $password) {
+    global $_db_;
+
+    $query = $_db_->prepare("SELECT id FROM users WHERE name = ?");
+    $query->bind_param("s", $name);
+    $query->execute();
+    $result = $query->get_result();
+
+    if ($result->num_rows > 0) {
+        die("User with this name already exist. Consider different name.");
+    }
+
+    $query = $_db_->prepare("INSERT INTO users (name, password) VALUES (?, ?)");
+    $query->bind_param("ss", $name, $password);
+    $query->execute();
+}
+
+
+
 function precteno(string $drink): int
 {
     $drink = dbEscape($drink);
 
     dbQuery("insert into drinky (nazev, precteno) value($drink, 1) on duplicate key update precteno = precteno+1");
     $result = dbQuery("select precteno from drinky where nazev=$drink");
-    // opět dekonstrukce
     [[$precteno]] = $result->fetch_all();
     return $precteno;
 }

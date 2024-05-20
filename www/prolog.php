@@ -1,38 +1,37 @@
 <?php
-// každá webová stránka začíná prologem
+// prolog
 
-// --- adresáře ---
+// adressates
 define('INC', __DIR__ . '/include');        // include files
 define('XML', __DIR__ . '/xml');            // XML files
-define('DRINKS', '/var/mixolog/drinks');    // uploaded data
+define('POSTS', '/var/database/posts');    // uploaded data
 
-// --- konfigurace stránek ---
-define('TITLE', 'Mixolog');
+// configuration
+define('TITLE', 'TOP-SHELF');
 
-// kde transformovat XML
+// transform xmls
 define('TRANSFORM_SERVER_SIDE', true);
 
-// --- session ---
-session_start();  // ze všeho nejdříve začít seanci, pak používat $_SESSION
+session_start();
 
-// jméno přihlášeného uživatele (s prefixem) nebo ''
-function getJmeno($prefix = ''): string
+
+function getName($prefix = ''): string
 {
-    $jmeno = @$_SESSION['jmeno'];
-    return $jmeno ? "$prefix$jmeno" : '';
+    $name = @$_SESSION['name'];
+    return $name ? "$prefix$name" : '';
 }
 
-// nastav nebo smaž jméno přihlášeného uživatele
-function setJmeno($jmeno = '')
+
+function setName($name = '')
 {
-    if ($jmeno)
-        $_SESSION['jmeno'] = $jmeno;
+    if ($name)
+        $_SESSION['name'] = $name;
     else
-        unset($_SESSION['jmeno']);
+        unset($_SESSION['name']);
 }
 
-// Je přihlášen uživatel?
-function isUser(): bool
+
+function isLoggedIn(): bool
 {
-    return !!getJmeno();
+    return !!getName();
 }

@@ -2,10 +2,13 @@
 // seznam stránek (href => title)
 $pages = [
     '/' => 'Home',
-    '/login.php' => 'Přihlášení',
-    '/drinks.php' => 'Receptář',
+    '/login.php' => 'Login',
+    '/posts.php' => 'Posts',
 ];
 
 // přihlášený uživatel smí nahrávat recepty
-if (isUser())
-    $pages['/upload.php'] = 'Nahrát';
+if (isLoggedIn())
+    $pages['/upload.php'] = 'Upload';
+
+if (isLoggedIn())
+    $pages['/myposts.php'] = 'My posts';

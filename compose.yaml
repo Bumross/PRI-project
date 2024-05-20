@@ -16,7 +16,7 @@ services:
       dockerfile: Dockerfiles/Database
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: mixolog
+      MYSQL_DATABASE: database
       MYSQL_USER: admin
       MYSQL_PASSWORD: heslo
     ports:

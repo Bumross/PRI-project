@@ -15,5 +15,5 @@ RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
 RUN apt install -y mc vim nano
 
 # adresář, do kterého Apache (uživatel: www-data) smí psát
-RUN mkdir -p /var/mixolog/drinks
-RUN chown www-data /var/mixolog/drinks
+RUN mkdir -p /var/database/posts
+RUN chown www-data /var/database/posts

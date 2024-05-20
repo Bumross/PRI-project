@@ -10,6 +10,25 @@
     <title>
         <?= TITLE ?>
     </title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px 0;
+        }
+
+        nav ul {
+            width: 100%; /* Ensure the navigation list stretches to fill the entire width */
+        }
+    </style>
 </head>
 
 <body>
